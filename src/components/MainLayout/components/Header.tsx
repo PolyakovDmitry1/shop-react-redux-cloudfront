@@ -26,7 +26,7 @@ export default function Header() {
   return (
     <AppBar position="relative">
       <Toolbar>
-        <Typography variant="h6" sx={{ flexGrow: 1 }}>
+        <Typography variant="h4" sx={{ flexGrow: 1 }} align="center">
           <Link
             component={RouterLink}
             sx={{ color: "inherit" }}
@@ -38,8 +38,8 @@ export default function Header() {
               style={{ verticalAlign: "middle" }}
               xmlns="http://www.w3.org/2000/svg"
               className="icon icon-tabler icon-tabler-building-store"
-              width="24"
-              height="24"
+              width="40"
+              height="40"
               viewBox="0 0 24 24"
               strokeWidth="2"
               stroke="currentColor"
