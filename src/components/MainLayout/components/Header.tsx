@@ -33,7 +33,7 @@ export default function Header() {
             underline="none"
             to="/"
           >
-            Welcome to my store!{" "}
+            Welcome to my store! Automated Deployment!{" "}
             <svg
               style={{ verticalAlign: "middle" }}
               xmlns="http://www.w3.org/2000/svg"
