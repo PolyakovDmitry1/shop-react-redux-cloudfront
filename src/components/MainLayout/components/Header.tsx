@@ -26,14 +26,34 @@ export default function Header() {
   return (
     <AppBar position="relative">
       <Toolbar>
-        <Typography variant="h6" sx={{ flexGrow: 1 }}>
+        <Typography variant="h4" sx={{ flexGrow: 1 }} align="center">
           <Link
             component={RouterLink}
             sx={{ color: "inherit" }}
             underline="none"
             to="/"
           >
-            My Store!
+            Welcome to my store! Automated Deployment!{" "}
+            <svg
+              style={{ verticalAlign: "middle" }}
+              xmlns="http://www.w3.org/2000/svg"
+              className="icon icon-tabler icon-tabler-building-store"
+              width="40"
+              height="40"
+              viewBox="0 0 24 24"
+              strokeWidth="2"
+              stroke="currentColor"
+              fill="none"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <line x1="3" y1="21" x2="21" y2="21"></line>
+              <path d="M3 7v1a3 3 0 0 0 6 0v-1m0 1a3 3 0 0 0 6 0v-1m0 1a3 3 0 0 0 6 0v-1h-18l2 -4h14l2 4"></path>
+              <line x1="5" y1="21" x2="5" y2="10.85"></line>
+              <line x1="19" y1="21" x2="19" y2="10.85"></line>
+              <path d="M9 21v-4a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v4"></path>
+            </svg>
           </Link>
         </Typography>
 
