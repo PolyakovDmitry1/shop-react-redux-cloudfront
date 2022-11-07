@@ -5,8 +5,8 @@ const API_PATHS = {
   bff: "https://.execute-api.eu-west-1.amazonaws.com/dev",
   cart: "https://.execute-api.eu-west-1.amazonaws.com/dev",
 
-  IMPORT_SERVICE: "https://0561i75y1k.execute-api.us-east-1.amazonaws.com/dev",
-  PRODUCTS: "https://z1x6qo7d68.execute-api.us-east-1.amazonaws.com/dev",
+  IMPORT_SERVICE: "https://w6pzm5d0ee.execute-api.us-east-1.amazonaws.com/dev",
+  PRODUCTS: "https://3hzmh62sab.execute-api.us-east-1.amazonaws.com/dev",
 };
 
 export default API_PATHS;
