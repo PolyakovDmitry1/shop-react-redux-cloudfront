@@ -12,7 +12,7 @@ const rl = readline.createInterface({
   output: process.stdout
 });
 
-rl.question('Please, enter your Distribution Id ', (distributionId) => {
+rl.question('Please, enter your Distribution Id ', (distributionId = 'E1PBKMW1FB5SYC') => {
   console.log(`Distribution Id is: ${distributionId}`);
   exec(`aws cloudfront create-invalidation --distribution-id ${distributionId} --paths "/*"`);
   rl.close();
