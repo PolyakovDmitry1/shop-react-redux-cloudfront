@@ -8,6 +8,7 @@ import { QueryClient, QueryClientProvider } from "react-query";
 import { ReactQueryDevtools } from "react-query/devtools";
 import { theme } from "~/theme";
 import axios from "axios";
+import API_PATHS from "~/constants/apiPaths";
 
 axios.interceptors.response.use(
   (response) => {
@@ -15,9 +16,12 @@ axios.interceptors.response.use(
   },
   (error) => {
     const statusCode = error.response?.status;
-    [401, 403].includes(statusCode)
-      ? alert(error.response.data?.message)
-      : alert(JSON.stringify(error.response.data, null, 2));
+    if (error?.config?.url.includes(API_PATHS.IMPORT_SERVICE)) {
+      [401, 403].includes(statusCode)
+        ? alert(error.response.data?.message)
+        : alert(JSON.stringify(error.response.data, null, 2));
+    }
+
     return Promise.reject(error);
   }
 );
